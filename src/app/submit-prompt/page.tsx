@@ -285,7 +285,7 @@ export default function SubmitPromptPage() {
                   }}>
                     GOOD ✓
                   </div>
-                  "Mystical forest guardian, ancient tree spirit with glowing ethereal eyes, magical aurora borealis dancing through twisted branches, detailed fantasy art style, luminous particles floating in air, by Greg Rutkowski and Alan Lee --ar 3:4"
+                  &quot;Mystical forest guardian, ancient tree spirit with glowing ethereal eyes, magical aurora borealis dancing through twisted branches, detailed fantasy art style, luminous particles floating in air, by Greg Rutkowski and Alan Lee --ar 3:4&quot;
                 </div>
                 
                 <h4 style={{ color: 'var(--accent)', marginBottom: '1rem', marginTop: '1rem' }}>❌ Avoid This:</h4>
@@ -310,7 +310,7 @@ export default function SubmitPromptPage() {
                   }}>
                     AVOID ❌
                   </div>
-                  "cool fantasy thing"
+                  &quot;cool fantasy thing&quot;
                 </div>
               </div>
             </div>
@@ -707,7 +707,7 @@ export default function SubmitPromptPage() {
                         lineHeight: '1.4',
                         margin: '1rem 0'
                       }}>
-                        "{formData.promptText}"
+                        &quot;{formData.promptText}&quot;
                       </div>
                     )}
                     

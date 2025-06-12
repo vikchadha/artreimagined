@@ -224,7 +224,7 @@ export default function HowItWorksPage() {
                 </div>
               </div>
               
-              <p><strong>Pro Tip:</strong> Use our "Trending" and "Top Voted" filters to discover the community&apos;s favorite prompts!</p>
+              <p><strong>Pro Tip:</strong> Use our &quot;Trending&quot; and &quot;Top Voted&quot; filters to discover the community&apos;s favorite prompts!</p>
             </div>
 
             {/* Step 2 */}

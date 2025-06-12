@@ -1,12 +1,10 @@
 // src/app/prompts/page.tsx
 'use client'
 
-import { Metadata } from 'next'
-import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
-import { Search, Filter, Copy, Share2, ThumbsUp, ThumbsDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 
 // Sample prompt data - replace with real data later
 const samplePrompts = [
@@ -319,7 +317,7 @@ export default function BrowsePromptsPage() {
                     gap: '0.5rem'
                   }}
                 >
-                  Art Style <ChevronDown size={16} />
+                  Art Style <ChevronDown className="w-4 h-4" />
                 </button>
                 {showStyleDropdown && (
                   <div style={{
@@ -375,7 +373,7 @@ export default function BrowsePromptsPage() {
                     gap: '0.5rem'
                   }}
                 >
-                  AI Tool <ChevronDown size={16} />
+                  AI Tool <ChevronDown className="w-4 h-4" />
                 </button>
                 {showToolDropdown && (
                   <div style={{
@@ -429,7 +427,7 @@ export default function BrowsePromptsPage() {
                     gap: '0.5rem'
                   }}
                 >
-                  Subject <ChevronDown size={16} />
+                  Subject <ChevronDown className="w-4 h-4" />
                 </button>
                 {showSubjectDropdown && (
                   <div style={{
