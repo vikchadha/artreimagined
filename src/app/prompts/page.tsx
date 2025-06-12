@@ -167,15 +167,32 @@ export default function BrowsePromptsPage() {
     )
   }
 
-  const filteredPrompts = prompts.filter(prompt => {
-    const matchesSearch = prompt.text.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         prompt.title.toLowerCase().includes(searchTerm.toLowerCase())
-    const matchesStyle = selectedStyle === 'all' || prompt.style.toLowerCase().replace(' ', '-') === selectedStyle
-    const matchesTool = selectedTool === 'all' || prompt.tool.toLowerCase().replace(' ', '-') === selectedTool
-    const matchesSubject = selectedSubject === 'all' || prompt.subjects.includes(selectedSubject)
-    
-    return matchesSearch && matchesStyle && matchesTool && matchesSubject
-  })
+  const filteredPrompts = prompts
+    .filter(prompt => {
+      const matchesSearch = prompt.text.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           prompt.title.toLowerCase().includes(searchTerm.toLowerCase())
+      const matchesStyle = selectedStyle === 'all' || prompt.style.toLowerCase().replace(' ', '-') === selectedStyle
+      const matchesTool = selectedTool === 'all' || prompt.tool.toLowerCase().replace(' ', '-') === selectedTool
+      const matchesSubject = selectedSubject === 'all' || prompt.subjects.includes(selectedSubject)
+      
+      return matchesSearch && matchesStyle && matchesTool && matchesSubject
+    })
+    .sort((a, b) => {
+      switch (sortBy) {
+        case 'mostpopular':
+          return b.votes - a.votes
+        case 'newest':
+          // Since we don't have actual dates, we'll use the ID as a proxy
+          return b.id - a.id
+        case 'trending':
+          // For trending, we'll use a combination of votes and recency
+          return (b.votes * 0.7 + b.id * 0.3) - (a.votes * 0.7 + a.id * 0.3)
+        case 'topvoted':
+          return b.votes - a.votes
+        default:
+          return 0
+      }
+    })
 
   return (
     <div className="min-h-screen">
