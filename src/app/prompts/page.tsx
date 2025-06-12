@@ -567,7 +567,7 @@ export default function BrowsePromptsPage() {
                 </div>
                 
                 <div className="prompt-text">
-                  "{prompt.text}"
+                  &quot;{prompt.text}&quot;
                 </div>
                 
                 <div className="prompt-footer">
