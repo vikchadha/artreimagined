@@ -1,0 +1,25 @@
+{
+  "name": "ArtReimagined",
+  "short_name": "AR",
+  "description": "Discover, share, and vote on the best AI art prompts for Midjourney, Stable Diffusion, & more",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#4A90E2",
+  "background_color": "#F4F6F8",
+  "display": "standalone",
+  "start_url": "/",
+  "orientation": "portrait",
+  "categories": ["art", "ai", "creativity", "design"],
+  "lang": "en-US",
+  "dir": "ltr"
+} 
