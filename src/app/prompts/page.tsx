@@ -96,6 +96,7 @@ export default function BrowsePromptsPage() {
   const [showStyleDropdown, setShowStyleDropdown] = useState(false)
   const [showToolDropdown, setShowToolDropdown] = useState(false)
   const [showSubjectDropdown, setShowSubjectDropdown] = useState(false)
+  const [sortBy, setSortBy] = useState('mostpopular')
   const [prompts, setPrompts] = useState(samplePrompts)
 
   const handleCopyPrompt = (promptText: string, promptId: number) => {
