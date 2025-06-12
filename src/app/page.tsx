@@ -137,7 +137,7 @@ export default function HomePage() {
                 </div>
                 
                 <div className="prompt-text">
-                  "{prompt.text}"
+                  &quot;{prompt.text}&quot;
                 </div>
                 
                 <div className="prompt-footer">

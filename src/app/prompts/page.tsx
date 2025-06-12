@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import { useState } from 'react'
-import { Search, Filter, ChevronDown, Copy, Share2, ThumbsUp, ThumbsDown } from 'lucide-react'
+import { Search, Filter, Copy, Share2, ThumbsUp, ThumbsDown } from 'lucide-react'
 
 // Sample prompt data - replace with real data later
 const samplePrompts = [
@@ -92,10 +92,9 @@ const samplePrompts = [
 
 export default function BrowsePromptsPage() {
   const [searchTerm, setSearchTerm] = useState('')
-  const [selectedStyle, setSelectedStyle] = useState('all')
-  const [selectedTool, setSelectedTool] = useState('all')
+  const [selectedStyle, setSelectedStyle] = useState<string>('all')
+  const [selectedTool, setSelectedTool] = useState<string>('all')
   const [selectedSubject, setSelectedSubject] = useState('all')
-  const [sortBy, setSortBy] = useState('popular')
   const [showStyleDropdown, setShowStyleDropdown] = useState(false)
   const [showToolDropdown, setShowToolDropdown] = useState(false)
   const [showSubjectDropdown, setShowSubjectDropdown] = useState(false)

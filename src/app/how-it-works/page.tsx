@@ -69,7 +69,7 @@ export default function HowItWorksPage() {
             marginLeft: 'auto',
             marginRight: 'auto'
           }}>
-            Discover amazing AI art prompts, copy them instantly, and create stunning visuals with your favorite AI tools. It's that easy!
+            Discover amazing AI art prompts, copy them instantly, and create stunning visuals with your favorite AI tools. It&apos;s that easy!
           </p>
           
           <div style={{ 
@@ -153,7 +153,7 @@ export default function HowItWorksPage() {
               maxWidth: '600px', 
               margin: '0 auto' 
             }}>
-              From discovery to creation - here's how ArtReimagined makes AI art accessible to everyone
+              From discovery to creation - here&apos;s how ArtReimagined makes AI art accessible to everyone
             </p>
           </div>
           
@@ -193,7 +193,7 @@ export default function HowItWorksPage() {
                 🔍 Discover & Browse
               </h3>
               <p style={{ color: '#666', marginBottom: '1.5rem', lineHeight: '1.7' }}>
-                Explore thousands of community-curated AI art prompts. Use our smart filters to find exactly what you're looking for by style, AI tool, or subject.
+                Explore thousands of community-curated AI art prompts. Use our smart filters to find exactly what you&apos;re looking for by style, AI tool, or subject.
               </p>
               
               <div style={{ 
@@ -212,7 +212,7 @@ export default function HowItWorksPage() {
                   padding: '0.75rem 1rem',
                   fontSize: '0.9rem'
                 }}>
-                  <span>🔍 Search: "cyberpunk cityscape"</span>
+                  <span>🔍 Search: &quot;cyberpunk cityscape&quot;</span>
                 </div>
                 <div style={{ 
                   display: 'flex',
@@ -224,7 +224,7 @@ export default function HowItWorksPage() {
                 </div>
               </div>
               
-              <p><strong>Pro Tip:</strong> Use our "Trending" and "Top Voted" filters to discover the community's favorite prompts!</p>
+              <p><strong>Pro Tip:</strong> Use our "Trending" and "Top Voted" filters to discover the community&apos;s favorite prompts!</p>
             </div>
 
             {/* Step 2 */}
@@ -268,7 +268,7 @@ export default function HowItWorksPage() {
                 border: '2px solid #e5e5e5'
               }}>
                 <div className="prompt-text">
-                  "Neon-lit cyberpunk cityscape at night, flying cars, holographic ads, rain-soaked streets --ar 16:9"
+                  &quot;Neon-lit cyberpunk cityscape at night, flying cars, holographic ads, rain-soaked streets --ar 16:9&quot;
                 </div>
                 <div style={{ textAlign: 'center', marginTop: '1rem' }}>
                   <button className="btn-primary" style={{ fontSize: '0.8rem', padding: '0.5rem 1rem' }}>

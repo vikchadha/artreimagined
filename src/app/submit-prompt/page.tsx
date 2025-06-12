@@ -221,7 +221,7 @@ export default function SubmitPromptPage() {
                 { icon: '✓', text: 'Original prompts only', desc: 'Share your own creations or properly credit sources' },
                 { icon: '✓', text: 'Test before sharing', desc: 'Make sure your prompt works well with the specified AI tool' },
                 { icon: '✓', text: 'Be descriptive', desc: 'Include specific style, mood, and technical details' },
-                { icon: '✓', text: 'Add context', desc: 'Brief description helps others understand your prompt\'s purpose' },
+                { icon: '✓', text: 'Add context', desc: 'Brief description helps others understand your prompt&apos;s purpose' },
                 { icon: '✓', text: 'Include examples', desc: 'Upload result images if possible to show your prompt in action' }
               ].map((guideline, index) => (
                 <div key={index} style={{ 
