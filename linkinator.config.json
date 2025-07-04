@@ -1,0 +1,29 @@
+{
+  "concurrency": 10,
+  "timeout": 30000,
+  "retry": 3,
+  "retryDelay": 1000,
+  "skip": [
+    "https://api.github.com",
+    "https://twitter.com",
+    "https://facebook.com",
+    "https://instagram.com",
+    "/admin/",
+    "/api/",
+    "/login",
+    "/signup",
+    "/auth",
+    "http://localhost:3000/api/",
+    "http://localhost:3000/_next/",
+    "https://analytics.google.com",
+    "https://www.google-analytics.com"
+  ],
+  "format": "text",
+  "markdown": true,
+  "urlRewriteExpressions": [
+    {
+      "pattern": "http://localhost:3000",
+      "replacement": "https://yourdomain.com"
+    }
+  ]
+} 

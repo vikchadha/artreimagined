@@ -29,6 +29,38 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+## Link Checking
+
+This project includes Linkinator for checking broken links. To use it:
+
+### Install Dependencies
+```bash
+npm install
+```
+
+### Check Links Locally
+```bash
+# Start your development server first
+npm run dev
+
+# In another terminal, check links
+npm run check-links
+```
+
+### Check Links in Production
+```bash
+npm run check-links-production
+```
+
+### Verbose Link Checking
+```bash
+npm run check-links-verbose
+```
+
+### Configuration
+- `linkinator.config.json` - Main configuration file
+- `linkinator-skip.txt` - Alternative skip file (legacy)
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

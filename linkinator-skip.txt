@@ -1,0 +1,22 @@
+# Skip external URLs that might be rate-limited or require authentication
+https://api.github.com
+https://twitter.com
+https://facebook.com
+https://instagram.com
+
+# Skip internal API routes and admin areas
+/admin/
+/api/
+
+# Skip any authentication or login pages that might redirect
+/login
+/signup
+/auth
+
+# Skip any temporary or development URLs
+http://localhost:3000/api/
+http://localhost:3000/_next/
+
+# Skip any external services you might link to
+https://analytics.google.com
+https://www.google-analytics.com 
