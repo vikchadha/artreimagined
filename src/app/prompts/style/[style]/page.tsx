@@ -1,8 +1,6 @@
 export const dynamic = 'force-dynamic';
 
-import { PageProps } from 'next';
-
-export default function PromptStylePage({ params }: PageProps<{ style: string }>) {
+export default function PromptStylePage({ params }: { params: { style: string } }) {
   const style = params.style || 'Unknown';
 
   return (
