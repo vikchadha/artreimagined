@@ -1,7 +1,7 @@
 export const dynamic = 'force-dynamic';
 
-export default function PromptStylePage({ params }: { params: { style: string } }) {
-  const style = params.style || 'Unknown';
+export default function PromptStylePage({ params }: any) {
+  const style = params?.style || 'Unknown';
 
   return (
     <main style={{ padding: '3rem 0', textAlign: 'center' }}>
