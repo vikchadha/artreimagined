@@ -2,8 +2,6 @@
 'use client'
 
 import Link from 'next/link'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { useState } from 'react'
 
 export default function SubmitPromptPage() {
@@ -62,7 +60,6 @@ export default function SubmitPromptPage() {
   if (showSuccess) {
     return (
       <div className="min-h-screen">
-        <Header />
         <section style={{ 
           background: 'linear-gradient(135deg, #4CAF50 0%, #45a049 100%)',
           color: 'white',
@@ -124,14 +121,12 @@ export default function SubmitPromptPage() {
             </div>
           </div>
         </section>
-        <Footer />
       </div>
     )
   }
 
   return (
     <div className="min-h-screen">
-      <Header />
       
       {/* Hero Section */}
       <section style={{ 
@@ -822,7 +817,6 @@ export default function SubmitPromptPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }

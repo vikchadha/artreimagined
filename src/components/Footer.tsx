@@ -5,6 +5,24 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container">
         <div className="footer-content">
+          {/* Brand and tagline */}
+          <div className="footer-section">
+            <h3 style={{ fontFamily: 'Montserrat, sans-serif', fontWeight: 900, fontSize: '1.5rem', color: '#fff', marginBottom: '0.5rem', letterSpacing: '-0.02em' }}>
+              Art<span style={{ color: '#FF6F61' }}>Reimagined</span>
+            </h3>
+            <div className="footer-tagline" style={{ color: '#fff', opacity: 0.85, fontSize: '1.05rem', marginBottom: '1.2rem' }}>
+              Inspiring AI Art Prompts
+            </div>
+            <div className="footer-social" style={{ display: 'flex', gap: '1rem', marginBottom: '1.2rem' }}>
+              <a href="https://twitter.com/artreimagined" className="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter" style={{ color: '#fff', fontSize: '1.3rem' }}>
+                <span aria-hidden="true">🐦</span>
+              </a>
+              <a href="mailto:hello@artreimagined.com" className="social-link" aria-label="Email" style={{ color: '#fff', fontSize: '1.3rem' }}>
+                <span aria-hidden="true">✉️</span>
+              </a>
+            </div>
+          </div>
+
           <div className="footer-section">
             <h4>Discover</h4>
             <ul>

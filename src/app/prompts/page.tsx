@@ -1,8 +1,6 @@
 // src/app/prompts/page.tsx
 'use client'
 
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { useState } from 'react'
 import { ChevronDown } from 'lucide-react'
 
@@ -196,7 +194,6 @@ export default function BrowsePromptsPage() {
 
   return (
     <div className="min-h-screen">
-      <Header />
       
       {/* Page Header */}
       <section style={{ 
@@ -668,7 +665,6 @@ export default function BrowsePromptsPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }

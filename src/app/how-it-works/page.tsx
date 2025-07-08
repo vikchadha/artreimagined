@@ -2,8 +2,6 @@
 'use client'
 
 import Link from 'next/link'
-import Header from '@/components/Header'
-import Footer from '@/components/Footer'
 import { useState } from 'react'
 
 export default function HowItWorksPage() {
@@ -42,7 +40,6 @@ export default function HowItWorksPage() {
 
   return (
     <div className="min-h-screen">
-      <Header />
       
       {/* Hero Section */}
       <section style={{ 
@@ -546,7 +543,6 @@ export default function HowItWorksPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   )
 }
