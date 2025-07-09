@@ -1,9 +1,13 @@
 export const dynamic = 'force-dynamic';
 
-type Params = { params: { style: string } };
+// Define the type for the params prop
+// In Next.js 15+, params may be a Promise and must be awaited
 
-export default function PromptStylePage({ params }: Params) {
-  const style = params.style || 'Unknown';
+type Params = { params: Promise<{ style: string }> };
+
+export default async function PromptStylePage({ params }: Params) {
+  const resolvedParams = await params;
+  const style = resolvedParams.style || 'Unknown';
 
   return (
     <main style={{ padding: '3rem 0', textAlign: 'center' }}>
