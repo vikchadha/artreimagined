@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://artreimagined.com/sitemap.xml
+
+# Block crawling of admin areas (if any)
+Disallow: /admin/
+Disallow: /api/private/
+
+# Allow common directories
+Allow: /prompts/
+Allow: /how-it-works/
+Allow: /submit-prompt/
+Allow: /challenges/
+Allow: /blog/
+Allow: /join/

@@ -61,6 +61,7 @@ export const metadata: Metadata = {
   verification: {
     google: 'your-google-verification-code',
   },
+  metadataBase: new URL('https://artreimagined.com'),
 }
 
 export default function RootLayout({

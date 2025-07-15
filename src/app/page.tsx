@@ -7,6 +7,9 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'ArtReimagined: Best AI Art Prompts & Inspiration',
   description: 'Discover, share, and vote on the best AI art prompts for Midjourney, Stable Diffusion, & more. Fuel your creativity with ArtReimagined.',
+  alternates: {
+    canonical: 'https://artreimagined.com',
+  },
 }
 
 const featuredPrompts = [
@@ -188,7 +191,7 @@ export default function HomePage() {
       </section>
 
       {/* --- JOIN THE COMMUNITY CALLOUT --- */}
-      <section className="section-padding" style={{ background: 'linear-gradient(90deg, #E040FB 0%, #7C3AED 100%)', color: '#fff', textAlign: 'center', borderRadius: '2.5rem', margin: '4rem 0' }}>
+      <section className="section-padding" style={{ background: 'linear-gradient(90deg, rgba(224,64,251,0.15) 0%, rgba(124,58,237,0.15) 100%)', color: '#333', textAlign: 'center', borderRadius: '2.5rem', margin: '4rem 0' }}>
         <div className="container">
           <h2 style={{ fontSize: '2.3rem', fontWeight: 900, marginBottom: '1.2rem', letterSpacing: '-0.01em' }}>
             Ready to Get Inspired?

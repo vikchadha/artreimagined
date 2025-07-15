@@ -24,10 +24,10 @@ export default function Header() {
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '1.2rem 0' }}>
           {/* Logo & Tagline */}
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
-            <Link href="/" style={{ fontSize: '2rem', fontWeight: 900, color: 'white', letterSpacing: '-0.03em', fontFamily: 'Montserrat, sans-serif', textShadow: '0 2px 12px rgba(224,64,251,0.10)' }}>
+            <Link href="/" style={{ fontSize: '2rem', fontWeight: 900, color: '#333', letterSpacing: '-0.03em', fontFamily: 'Montserrat, sans-serif', textShadow: '0 2px 12px rgba(224,64,251,0.10)' }}>
               Art<span style={{ color: '#FF6F61' }}>Reimagined</span>
             </Link>
-            <span style={{ color: 'white', fontSize: '1rem', fontWeight: 500, opacity: 0.85, marginTop: '0.1rem', letterSpacing: '0.01em' }}>
+            <span style={{ color: '#333', fontSize: '1rem', fontWeight: 500, opacity: 0.85, marginTop: '0.1rem', letterSpacing: '0.01em' }}>
               Inspiring AI Art Prompts
             </span>
           </div>
@@ -40,7 +40,7 @@ export default function Header() {
                 href={item.href}
                 style={{
                   fontWeight: 600,
-                  color: pathname === item.href ? '#FF6F61' : 'white',
+                  color: pathname === item.href ? '#FF6F61' : '#333',
                   background: pathname === item.href ? 'rgba(255,255,255,0.13)' : 'transparent',
                   padding: '0.5rem 1.2rem',
                   borderRadius: '0.7rem',
@@ -66,7 +66,7 @@ export default function Header() {
           <div className="md:hidden">
             <button
               type="button"
-              style={{ padding: '0.5rem', borderRadius: '0.5rem', color: 'white', backgroundColor: 'transparent', border: 'none', cursor: 'pointer', transition: 'all 0.3s' }}
+              style={{ padding: '0.5rem', borderRadius: '0.5rem', color: '#333', backgroundColor: 'transparent', border: 'none', cursor: 'pointer', transition: 'all 0.3s' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
               <span style={{ position: 'absolute', width: '1px', height: '1px', padding: 0, margin: '-1px', overflow: 'hidden', clip: 'rect(0, 0, 0, 0)', whiteSpace: 'nowrap', border: 0 }}>
@@ -83,7 +83,7 @@ export default function Header() {
 
         {/* Mobile Navigation */}
         {mobileMenuOpen && (
-          <div style={{ borderTop: '1px solid rgba(255,255,255,0.18)', paddingTop: '1.2rem', paddingBottom: '1.2rem' }} className="md:hidden">
+          <div style={{ borderTop: '1px solid rgba(51,51,51,0.18)', paddingTop: '1.2rem', paddingBottom: '1.2rem' }} className="md:hidden">
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               {navigation.map((item) => (
                 <Link
@@ -91,7 +91,7 @@ export default function Header() {
                   href={item.href}
                   style={{
                     fontWeight: 600,
-                    color: pathname === item.href ? '#FF6F61' : 'white',
+                    color: pathname === item.href ? '#FF6F61' : '#333',
                     background: pathname === item.href ? 'rgba(255,255,255,0.13)' : 'transparent',
                     padding: '0.7rem 1.2rem',
                     borderRadius: '0.7rem',
