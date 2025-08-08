@@ -1,0 +1,303 @@
+/* 
+ * ArtReimagined Design System
+ * Target: Creative Millennials (28-43)
+ * Brand Values: Warm, Authentic, Empowering, Accessible
+ */
+
+/* ============================================
+   1. COLOR SYSTEM
+   ============================================ */
+:root {
+  /* Primary Colors */
+  --color-primary: #FF6B6B;        /* Warm Coral - emotional, creative, approachable */
+  --color-primary-light: #FF8787;
+  --color-primary-dark: #FF4757;
+  --color-primary-rgb: 255, 107, 107;
+  
+  /* Secondary Colors */
+  --color-secondary: #4ECDC4;      /* Deep Teal - balance, transformation */
+  --color-secondary-light: #6DD5CE;
+  --color-secondary-dark: #3BB8B0;
+  --color-secondary-rgb: 78, 205, 196;
+  
+  /* Accent Colors */
+  --color-accent: #FFE66D;          /* Golden Yellow - optimism, CTAs */
+  --color-accent-light: #FFEB8A;
+  --color-accent-dark: #FFD93D;
+  --color-accent-rgb: 255, 230, 109;
+  
+  /* Neutral Colors */
+  --color-text-primary: #1A1A2E;   /* Soft Black */
+  --color-text-secondary: #4A5568; /* Warm Gray */
+  --color-text-tertiary: #718096;
+  --color-text-inverse: #FFFFFF;
+  
+  /* Background Colors */
+  --color-bg-primary: #FFFFFF;
+  --color-bg-secondary: #FFF8F3;   /* Light Cream - warmer than pure white */
+  --color-bg-tertiary: #FFF0E6;
+  --color-bg-overlay: rgba(26, 26, 46, 0.7);
+  
+  /* Semantic Colors */
+  --color-success: #48BB78;
+  --color-warning: #ED8936;
+  --color-error: #F56565;
+  --color-info: #4299E1;
+  
+  /* Gradients */
+  --gradient-primary: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+  --gradient-secondary: linear-gradient(135deg, #FFE66D 0%, #FF6B6B 100%);
+  --gradient-warm: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+  --gradient-cool: linear-gradient(135deg, #4ECDC4 0%, #6DD5CE 100%);
+  --gradient-subtle: linear-gradient(135deg, #FFF8F3 0%, #FFF0E6 100%);
+}
+
+/* ============================================
+   2. TYPOGRAPHY SYSTEM
+   ============================================ */
+:root {
+  /* Font Families */
+  --font-heading: 'Playfair Display', 'Georgia', serif;  /* Editorial serif with personality */
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-accent: 'Space Grotesk', 'Montserrat', sans-serif;  /* For CTAs and special elements */
+  
+  /* Font Sizes - Desktop */
+  --text-xs: 0.75rem;      /* 12px */
+  --text-sm: 0.875rem;     /* 14px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg: 1.125rem;     /* 18px */
+  --text-xl: 1.25rem;      /* 20px */
+  --text-2xl: 1.5rem;      /* 24px */
+  --text-3xl: 1.875rem;    /* 30px */
+  --text-4xl: 2.25rem;     /* 36px */
+  --text-5xl: 3rem;        /* 48px */
+  --text-6xl: 3.75rem;     /* 60px */
+  
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-extrabold: 800;
+  
+  /* Line Heights */
+  --leading-none: 1;
+  --leading-tight: 1.25;
+  --leading-snug: 1.375;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.625;
+  --leading-loose: 1.75;
+  
+  /* Letter Spacing */
+  --tracking-tighter: -0.05em;
+  --tracking-tight: -0.025em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+}
+
+/* ============================================
+   3. SPACING SYSTEM
+   ============================================ */
+:root {
+  --space-0: 0;
+  --space-1: 0.25rem;      /* 4px */
+  --space-2: 0.5rem;       /* 8px */
+  --space-3: 0.75rem;      /* 12px */
+  --space-4: 1rem;         /* 16px */
+  --space-5: 1.25rem;      /* 20px */
+  --space-6: 1.5rem;       /* 24px */
+  --space-8: 2rem;         /* 32px */
+  --space-10: 2.5rem;      /* 40px */
+  --space-12: 3rem;        /* 48px */
+  --space-16: 4rem;        /* 64px */
+  --space-20: 5rem;        /* 80px */
+  --space-24: 6rem;        /* 96px */
+  --space-32: 8rem;        /* 128px */
+}
+
+/* ============================================
+   4. BORDER & RADIUS SYSTEM
+   ============================================ */
+:root {
+  /* Border Radius - Softer, more approachable */
+  --radius-none: 0;
+  --radius-sm: 0.5rem;     /* 8px */
+  --radius-md: 0.75rem;    /* 12px */
+  --radius-lg: 1rem;       /* 16px - default for cards */
+  --radius-xl: 1.25rem;    /* 20px */
+  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-3xl: 2rem;      /* 32px */
+  --radius-full: 9999px;   /* Pills */
+  
+  /* Border Widths */
+  --border-0: 0;
+  --border-1: 1px;
+  --border-2: 2px;
+  --border-3: 3px;
+  --border-4: 4px;
+  
+  /* Border Colors */
+  --border-color-light: rgba(74, 85, 104, 0.1);
+  --border-color-medium: rgba(74, 85, 104, 0.2);
+  --border-color-dark: rgba(74, 85, 104, 0.3);
+}
+
+/* ============================================
+   5. SHADOWS & ELEVATION
+   ============================================ */
+:root {
+  /* Soft, warm shadows for approachability */
+  --shadow-xs: 0 1px 2px rgba(255, 107, 107, 0.05);
+  --shadow-sm: 0 2px 4px rgba(255, 107, 107, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(255, 107, 107, 0.07), 0 2px 4px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 10px 15px rgba(255, 107, 107, 0.08), 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px rgba(255, 107, 107, 0.1), 0 10px 10px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px rgba(255, 107, 107, 0.15);
+  --shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+  --shadow-glow: 0 0 20px rgba(255, 107, 107, 0.3);
+}
+
+/* ============================================
+   6. TRANSITIONS & ANIMATIONS
+   ============================================ */
+:root {
+  /* Smooth, friendly transitions */
+  --transition-fastest: 150ms;
+  --transition-fast: 250ms;
+  --transition-base: 300ms;   /* Default for hover states */
+  --transition-slow: 500ms;
+  --transition-slower: 700ms;
+  
+  /* Easing Functions */
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+/* ============================================
+   7. Z-INDEX SCALE
+   ============================================ */
+:root {
+  --z-negative: -1;
+  --z-0: 0;
+  --z-10: 10;
+  --z-20: 20;
+  --z-30: 30;
+  --z-40: 40;
+  --z-50: 50;       /* Sticky headers */
+  --z-60: 60;       /* Modals */
+  --z-70: 70;       /* Popovers */
+  --z-80: 80;       /* Tooltips */
+  --z-90: 90;       /* Notifications */
+  --z-100: 100;     /* Critical overlays */
+}
+
+/* ============================================
+   8. BREAKPOINTS
+   ============================================ */
+:root {
+  --screen-xs: 475px;
+  --screen-sm: 640px;
+  --screen-md: 768px;
+  --screen-lg: 1024px;
+  --screen-xl: 1280px;
+  --screen-2xl: 1536px;
+}
+
+/* ============================================
+   9. COMPONENT TOKENS
+   ============================================ */
+:root {
+  /* Buttons */
+  --btn-padding-x: var(--space-6);
+  --btn-padding-y: var(--space-3);
+  --btn-radius: var(--radius-lg);
+  --btn-font-weight: var(--font-semibold);
+  --btn-transition: all var(--transition-base) var(--ease-in-out);
+  
+  /* Cards */
+  --card-padding: var(--space-6);
+  --card-radius: var(--radius-lg);
+  --card-shadow: var(--shadow-md);
+  --card-bg: var(--color-bg-primary);
+  
+  /* Forms */
+  --input-padding-x: var(--space-4);
+  --input-padding-y: var(--space-3);
+  --input-radius: var(--radius-md);
+  --input-border: var(--border-2) solid var(--border-color-light);
+  --input-focus-border: var(--border-2) solid var(--color-primary);
+  
+  /* Navigation */
+  --nav-height: 72px;
+  --nav-bg: rgba(255, 255, 255, 0.95);
+  --nav-backdrop: blur(10px);
+}
+
+/* ============================================
+   10. UTILITY CLASSES
+   ============================================ */
+
+/* Typography Utilities */
+.font-heading { font-family: var(--font-heading); }
+.font-body { font-family: var(--font-body); }
+.font-accent { font-family: var(--font-accent); }
+
+/* Color Utilities */
+.text-primary { color: var(--color-primary); }
+.text-secondary { color: var(--color-secondary); }
+.text-accent { color: var(--color-accent); }
+.bg-primary { background-color: var(--color-primary); }
+.bg-secondary { background-color: var(--color-secondary); }
+.bg-accent { background-color: var(--color-accent); }
+.bg-cream { background-color: var(--color-bg-secondary); }
+
+/* Gradient Utilities */
+.gradient-primary { background: var(--gradient-primary); }
+.gradient-warm { background: var(--gradient-warm); }
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Shadow Utilities */
+.shadow-soft { box-shadow: var(--shadow-md); }
+.shadow-glow { box-shadow: var(--shadow-glow); }
+
+/* Border Radius Utilities */
+.rounded-soft { border-radius: var(--radius-lg); }
+.rounded-softer { border-radius: var(--radius-xl); }
+
+/* Animation Utilities */
+.transition-smooth {
+  transition: var(--btn-transition);
+}
+
+.hover-lift {
+  transition: transform var(--transition-base) var(--ease-out);
+}
+
+.hover-lift:hover {
+  transform: translateY(-2px);
+}
+
+/* Organic Shapes (SVG backgrounds) */
+.organic-blob-1 {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23FFE66D' fill-opacity='0.2' d='M47.3,-51.8C59.6,-39.5,66.3,-22.4,66.8,-5.4C67.3,11.6,61.5,28.4,50.5,41.3C39.4,54.2,23.1,63.2,5.3,65.3C-12.5,67.4,-31.8,62.6,-45.8,51.2C-59.8,39.8,-68.5,21.8,-68.9,3.1C-69.3,-15.6,-61.4,-35,-48.4,-47.5C-35.4,-60,-17.3,-65.6,0.4,-66C18.1,-66.4,35,-64.1,47.3,-51.8Z' transform='translate(100 100)' /%3E%3C/svg%3E");
+}
+
+/* Media Queries for Responsive Typography */
+@media (max-width: 768px) {
+  :root {
+    --text-3xl: 1.5rem;
+    --text-4xl: 1.875rem;
+    --text-5xl: 2.25rem;
+    --text-6xl: 3rem;
+  }
+}
