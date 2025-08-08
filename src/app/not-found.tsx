@@ -1,11 +1,7 @@
-// Custom 404 Page - Art Lost in Translation
-import { Metadata } from 'next'
-import Link from 'next/link'
+'use client'
 
-export const metadata: Metadata = {
-  title: '404 - Art Lost in Translation | ArtReimagined',
-  description: 'This page seems to have transformed into thin air. Let us help you find what you\'re looking for.',
-}
+// Custom 404 Page - Art Lost in Translation
+import Link from 'next/link'
 
 const lostArtworks = [
   { emoji: '🎨', title: 'Explore AI Tools', href: '/tools', description: 'Transform your art with 15+ AI tools' },
@@ -23,7 +19,7 @@ const funMessages = [
 ]
 
 export default function NotFound() {
-  // Pick a random fun message (Note: In production, you'd want this server-side or use a seed)
+  // Pick a random fun message
   const randomMessage = funMessages[Math.floor(Math.random() * funMessages.length)]
   
   return (
@@ -74,7 +70,7 @@ export default function NotFound() {
               maxWidth: '500px',
               margin: '0 auto 3rem'
             }}>
-              Don't worry! While this page took an unexpected artistic detour, we have plenty of amazing transformations waiting for you.
+              Do not worry! While this page took an unexpected artistic detour, we have plenty of amazing transformations waiting for you.
             </p>
 
             {/* Quick Actions */}
@@ -171,7 +167,7 @@ export default function NotFound() {
               borderRadius: '1rem'
             }}>
               <p style={{ fontSize: '1.1rem', color: '#4A5568', marginBottom: '1rem' }}>
-                While you're here, did you know?
+                While you are here, did you know?
               </p>
               <div style={{ display: 'flex', justifyContent: 'center', gap: '3rem', flexWrap: 'wrap' }}>
                 <div>
@@ -183,7 +179,7 @@ export default function NotFound() {
                   <div style={{ fontSize: '0.9rem', color: '#718096' }}>Profit margins</div>
                 </div>
                 <div>
-                  <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#FF6B6B', fontFamily: 'Space Grotesk, sans-serif' }}>< 5 sec</div>
+                  <div style={{ fontSize: '1.8rem', fontWeight: 'bold', color: '#FF6B6B', fontFamily: 'Space Grotesk, sans-serif' }}>5 sec</div>
                   <div style={{ fontSize: '0.9rem', color: '#718096' }}>To transform</div>
                 </div>
               </div>
@@ -192,7 +188,7 @@ export default function NotFound() {
         </section>
       </div>
 
-      {/* CSS Animation (in a real app, this would be in a CSS file) */}
+      {/* CSS Animation */}
       <style jsx>{`
         @keyframes float {
           0%, 100% { transform: translateY(0px); }

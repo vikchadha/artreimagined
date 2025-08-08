@@ -185,8 +185,7 @@ export default function HowItWorksPage() {
                 </div>
                 {idx < steps.length - 1 && (
                   <div style={{
-                    display: 'none',
-                    '@media (min-width: 768px)': { display: 'block' },
+                    display: 'block',
                     position: 'absolute',
                     right: '-30px',
                     top: '50%',
